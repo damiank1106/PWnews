@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PH News - Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for PH News app" />
+  <style>
+    :root {
+      --bg1: #07111f;
+      --bg2: #0b1d33;
+      --card: rgba(255, 255, 255, 0.08);
+      --card-border: rgba(255, 255, 255, 0.14);
+      --text: #ffffff;
+      --muted: #d7e4ff;
+      --accent: #67b7ff;
+      --accent2: #9d7bff;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(103, 183, 255, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(157, 123, 255, 0.16), transparent 30%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      min-height: 100%;
+    }
+
+    body {
+      padding: 24px;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--card-border);
+      background: linear-gradient(135deg, rgba(255,255,255,0.10), rgba(255,255,255,0.05));
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+      border-radius: 32px;
+      padding: 34px 28px;
+      margin-bottom: 24px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background: conic-gradient(
+        from 180deg,
+        rgba(103,183,255,0.18),
+        rgba(157,123,255,0.12),
+        rgba(103,183,255,0.18)
+      );
+      filter: blur(80px);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: 0.4px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: 1.02rem;
+      line-height: 1.7;
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .card {
+      border-radius: var(--radius);
+      padding: 24px;
+      border: 1px solid var(--card-border);
+      background: var(--card);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+      border-color: rgba(103,183,255,0.35);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.18rem;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+
+    p, li {
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 0.98rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #a8d6ff;
+    }
+
+    .footer {
+      margin-top: 22px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      opacity: 0.9;
+    }
+
+    .highlight {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .top-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.09);
+      color: #fff;
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+
+    .btn:hover {
+      background: rgba(255,255,255,0.14);
+      border-color: rgba(103,183,255,0.45);
+      transform: translateY(-2px);
+    }
+
+    @media (min-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .full {
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="badge">PH News • Privacy Policy</div>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">
+          This Privacy Policy explains how <span class="highlight">PH News</span> collects, uses, stores,
+          and protects information when you use the app.
+        </p>
+        <div class="top-actions">
+          <a class="btn" href="https://damiank1106.github.io/PHnews/" target="_blank" rel="noopener noreferrer">Open Website</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card full">
+        <h2>1. Overview</h2>
+        <p>
+          PH News is a Philippine news reader app that displays articles from publicly available RSS feeds.
+          The app is designed to provide a fast, modern reading experience on Android phones and tablets.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>2. Information We Collect</h2>
+        <p>
+          PH News is designed to collect as little personal information as possible.
+          Depending on how the app is used, it may store limited app-related data locally on your device, such as:
+        </p>
+        <ul>
+          <li>theme preference such as light mode or dark mode</li>
+          <li>saved bookmarks or favorite articles</li>
+          <li>cached news articles for faster loading and offline reading</li>
+          <li>basic app settings and sync preferences</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>3. News Sources</h2>
+        <p>
+          The app reads publicly available RSS feeds and displays article previews, images, titles,
+          descriptions, source names, and publication dates.
+        </p>
+        <p>
+          When you choose to open a full article, you may be redirected to the original publisher’s website.
+          Those websites may have their own privacy policies and data practices.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>4. Local Storage</h2>
+        <p>
+          To improve speed and support offline access, PH News may temporarily store synced articles on your device.
+          Cached news articles are kept for up to <span class="highlight">7 days</span> and older items are automatically removed.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>5. Synchronization</h2>
+        <p>
+          The app may synchronize RSS content automatically once per day, or when manually refreshed by the user.
+          This synchronization is used only to download recent news content and update the local cache.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>6. Personal Data</h2>
+        <p>
+          At this time, PH News does not require account registration and does not intentionally collect
+          sensitive personal information such as your full name, phone number, home address, or payment information.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>7. Data Sharing</h2>
+        <p>
+          PH News does not sell your personal data. The app’s main function is to display content from public RSS feeds.
+          If you open a source article outside the app, the third-party publisher may collect information according to its own policies.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>8. Security</h2>
+        <p>
+          Reasonable efforts are made to keep locally stored app data secure. However, no method of storage
+          or transmission is guaranteed to be 100% secure.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>9. Children’s Privacy</h2>
+        <p>
+          PH News is not specifically directed to children under 13. The app does not knowingly collect personal information from children.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>10. External Links</h2>
+        <p>
+          The app may contain links to third-party websites, including original news publishers.
+          We are not responsible for the privacy practices, content, or security of third-party websites.
+        </p>
+      </article>
+
+      <article class="card full">
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>
+          This Privacy Policy may be updated from time to time to reflect app improvements, feature changes,
+          or legal updates. Any updated version will be published on this page.
+        </p>
+      </article>
+
+      <article class="card full">
+        <h2>12. Contact</h2>
+        <p>
+          If you have questions about this Privacy Policy, you can contact the app developer through the contact method
+          provided in the app store listing or project page.
+        </p>
+      </article>
+
+      <article class="card full">
+        <h2>13. Effective Date</h2>
+        <p>
+          Effective date: <span class="highlight">April 14, 2026</span>
+        </p>
+      </article>
+    </section>
+
+    <div class="footer">
+      © 2026 PH News. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
